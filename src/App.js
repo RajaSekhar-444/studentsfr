@@ -18,7 +18,7 @@ const App = () => {
     try {
       const parsedInput = JSON.parse(jsonInput);
 
-      const res = await axios.post('http://localhost:4000/bfhl', parsedInput);
+      const res = await axios.post('https://students-1-wkpm.onrender.com/bfhl', parsedInput);
       setResponse(res.data);
     } catch (error) {
       alert('Invalid JSON or Server Error');
